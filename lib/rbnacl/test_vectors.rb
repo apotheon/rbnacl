@@ -85,6 +85,19 @@ module RbNaCl
     :blake2b_keyed_digest  => "142709d62e28fcccd0af97fad0f8465b971e82201dc51070faa0372aa43e9248" +
                               "4be1c1e73ba10906d5d1853db6a4106e0a7bf9800d373d6dee2d46d62ef2a461",
 
+    # scrypt test vectors
+    # Taken from http://tools.ietf.org/html/draft-josefsson-scrypt-kdf-01#page-14
+    :scrypt_password => "password",
+    :scrypt_salt     => "NaCl",
+    :scrypt_N        => 1024,
+    :scrypt_r        => 8,
+    :scrypt_p        => 16,
+    :scrypt_dklen    => 64,
+    :scrypt_digest   => "fdbabe1c9d3472007856e7190d01e9fe" +
+                        "7c6ad7cbc8237830e77376634b373162" +
+                        "2eaf30d92e22a3886ff109279d9830da" +
+                        "c727afb94a83ee6d8360cbdfa2cc0640",
+
     # Auth test vectors
     # Taken from NaCl distribution
     #
